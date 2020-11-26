@@ -1,0 +1,281 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*my code*/
+
+*{
+  text-decoration: none;
+}
+
+main{
+	padding-top: 100px;
+}
+
+
+header
+{
+  background-color: #fff;
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+  width:100%;
+  height: 100px;
+}
+
+header .header-brand{
+  font-family: arial;
+  font-size: 24px;
+  font-weight: 900;
+  color: #111;
+  text-transform: uppercase;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px 0;
+}
+
+header nav ul {
+  margin:0 auto;;
+  display: block;
+  width:fit-content;
+}
+
+header nav ul li {
+  display: inline-block;
+  float: left;
+  list-style: none;
+  padding: 0 16px;
+}
+
+header nav ul li a {
+  font-family: arial;
+  font-size: 20px;
+  color: #111;
+  text-transform: uppercase;
+}
+
+header .header-cases {
+  display: none;
+}
+
+@media only screen and (min-width:1000px){
+  header .header-brand{
+    margin: 31px 0;
+    text-align: left;
+    padding: 0px 20px 0px 40px;
+    border-right: 3px solid #111;
+    float: left;
+    line-height: 38px;
+  }
+  header nav ul {
+    margin: 20 0px 0px 20px ;
+    float:left;
+  }
+
+  header nav ul li a {
+    line-height: 100px;
+  }
+
+  header .header-cases {
+    display: block;
+    font-family: arial;
+    font-size: 20px;
+    color: #111;
+    text-transform: uppercase;
+    border: 1px solid #111;
+    float: right;
+    margin-right: 40px;
+    padding: 0 20px;
+    line-height: 40px;
+    margin-top: 31px;
+  }
+}
+
+/*Index*/
+
+.index-banner {
+  width:100%;
+  height: calc(50vh - 100px);
+  background-image:url('img/OIP.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: table;
+
+}
+
+.vertical-center{
+  display: table-cell;
+  vertical-align: middle;
+
+}
+
+.index-banner h2{
+  font-family: arial;
+  font-size: 60px;
+  font-weight: 900;
+  line-height: 70px;
+  color: #fff;
+  text-align: center;
+  text-shadow: 2px 2px 8px #1e1e1e;
+}
+
+.index-banner h1{
+  font-family: "Times New Roman";
+  font-size: 22px;
+  font-weight: 100;
+  font-style:italic;
+  line-height: 40px;
+  color: #fff;
+  text-align: center;
+  text-shadow: 2px 2px 8px #1e1e1e;
+}
+
+.index-link div {
+  margin: 16px 16px 0;
+  width: calc (50%-32px);
+  height: 100px;
+  background-color: #f2f2f2;
+	padding: 0 0 20px 0;
+}
+
+
+.index-link div h3{
+  font-family: "Times New Roman";
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 100px;
+  color: #111;
+	margin: 0 auto;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@media only screen and (min-width:1000px){
+	.wrapper{
+		width: 350px;
+		border-right: 3px solid #101010;
+		margin: 0px 0px;
+		display: grid;
+		grid-template-columns: 1fr, 1fr;
+	}
+	.index-banner {
+	  width:100%;
+	  height: 450px;
+	}
+
+  .index-banner h1 {
+  display: block;
+  width: 1000px;
+	margin:0 auto;
+	font-size: 32px;
+	line-height: 60px;
+	padding-top: 20px;
+  }
+
+
+	.index-link div {
+		height: 100px;
+		padding:0 auto;
+		margin: 20px 20px 20px 20px;
+
+	}
+
+	.index-link div h3{
+	  margin: 10px 20px;
+		line-height: center;
+		float: left;
+	}
+}
+
+footer {
+  width: calc(100% - 80px);
+  padding: 40px 40px;
+  margin-top: 20px;
+  background-color: #111;
+  overflow: hidden;
+}
+
+footer ul{
+  width: fit-content;
+  float:left;
+  padding-left: 20px;
+}
+
+footer ul li{
+  display: block;
+  list-style: none;
+}
+
+footer ul li a {
+  font-family: arial;
+  font-size: 24px;
+  color: #fff;
+  line-height:40px;
+}
+
+.footer-caselink{
+  display: none;
+}
+
+.footer-sm{
+  width: 60px;
+  float: right;
+	display: inline-block;
+  background-color: white;
+  border: 1px solid #black;
+  padding: 10px 10px;
+}
+
+.footer-sm img{
+  width: 100%;
+  margin-bottom: 10px;
+  display: inline-block;
+}
